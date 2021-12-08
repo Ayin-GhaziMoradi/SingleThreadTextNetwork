@@ -9,7 +9,7 @@ public class Client {
 
     public static void main(String[] args) {
         try (Socket client = new Socket("192.168.42.65", 7070)) {
-            System.out.println("Connected to server..");
+            System.out.println("Connected to server.");
             OutputStream out = client.getOutputStream();
             InputStream in = client.getInputStream();
             byte[] buffer = new byte[2048];
